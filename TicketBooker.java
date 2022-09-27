@@ -1,7 +1,7 @@
 import java.util.*;
 public class TicketBooker {
 
-    static int availableLowerBerths = 10;
+    static int availableLowerBerths = 10;       //Can be modified these values.., then shloud modify List Positions too
     static int availableMiddleBerths =12;
     static int availableUpperBerths = 15;
     static int availableRacTickets = 0;
@@ -12,10 +12,10 @@ public class TicketBooker {
     static List<Integer>bookedTicketList = new ArrayList<>();               //List of booked Tickets
 
 
-    static List<Integer> lowerBerthPositions = new ArrayList<>(Arrays.asList(1));
-    static List<Integer> middleBerthPositions = new ArrayList<>(Arrays.asList(1));
-    static List<Integer> upperBerthPositions = new ArrayList<>(Arrays.asList(1));
-    static List<Integer> racPositions = new ArrayList<>(Arrays.asList(1));
+    static List<Integer> lowerBerthPositions = new ArrayList<>(Arrays.asList(1)); //Here add the positions based on your available tickets //12,3,4,....
+    static List<Integer> middleBerthPositions = new ArrayList<>(Arrays.asList(1)); //Here add the positions based on your available tickets //12,3,4,....
+    static List<Integer> upperBerthPositions = new ArrayList<>(Arrays.asList(1)); //Here add the positions based on your available tickets //12,3,4,....
+    static List<Integer> racPositions = new ArrayList<>(Arrays.asList(1));  //Here add the positions based on your available tickets //12,3,4,....
     static List<Integer> waitingListPositions = new ArrayList<>(Arrays.asList(1));
 
     static HashMap<Integer,Passenger> passengers = new HashMap<>();      //HashMap of passengers
